@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel = "stylesheet" href="main.css"> 
+        <title>SLIDER</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+    </head>
+
+    <body>
+        <div class="flex-wrapper">
+            
+            <div class= "slide-wrapper"> 
+                <div class="slider-counter">
+                    <span id="current">03</span>/<span id="total">04</span>
+                    </div>              
+            <div class = "slide-wrapper-inner">
+                    <div class="slide">
+                    <div class="item-container-img"><img src="../slider/img/mountin.jpg" ></div>
+                    <h2 class="item-container-text">Горы</h2>
+                </div>
+                <div class="slide">
+                    <div class="item-container-img"><img src="../slider/img/lion.jpg"></div>
+                    <h2 class="item-container-text">Белый лев</h2>
+                </div>
+                <div class="slide">
+                    <div class="item-container-img"><img src="../slider/img/ozero-les.jpg" ></div>
+                    <h2 class="item-container-text">Озеро</h2>
+                </div>
+                <div class="slide">
+                    <div class="item-container-img"><img src="../slider/img/water-sky.jpg"></div>
+                    <h2 class="item-container-text">Будда</h2>                              
+                </div>
+                
+            </div>
+                <div><a href="#" class = "swipe-control" data-slide="prev"><img src="img/leftarrow.png" width="100px" height="50%"></a></div>
+                <div><a href="#" class = "swipe-control" data-slide="next"><img src="img/rightarrow.png" width="100px" height="50%"></a></div>
+            </div>
+            <ul class="dots-wrapper">
+                <li class="dot" data-slide-to ="1"></li>
+                <li class="dot" data-slide-to ="2"></li>
+                <li class="dot" data-slide-to ="3"></li>
+                <li class="dot" data-slide-to ="4"></li>         
+            </ul>
+           
+        </div>
+        
+        
+        <script src="main.js"></script>
+    </body>
+</html>
